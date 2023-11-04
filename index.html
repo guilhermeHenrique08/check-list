@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta
+      name="”description”"
+      content="Uma lista de tarefas intuitiva e flexível que facilita a organização diária. Oferece funcionalidades como adicionar, editar e filtrar tarefas, com a opção de personalizar o tema"
+    />
+    <meta name="keywords" content="check list, todo list, tarefas, lista" />
+    <meta name="author" content="Guilherme Henrique Marques" />
     <title>Check List | GHM</title>
 
     <!-- Link CSS -->
@@ -31,6 +38,7 @@
           </label>
         </div>
       </header>
+
       <form id="edit-form" class="hide">
         <p>Edite sua tarefa</p>
         <div class="form-control">
@@ -41,9 +49,10 @@
         </div>
         <button id="cancel-edit-btn">Cancelar</button>
       </form>
+
       <div id="toolbar">
         <div id="search">
-          <h4>Pesquisar</h4>
+          <label for="search-input">Pesquisar</label>
           <form class="form-search">
             <input type="text" id="search-input" placeholder="Buscar" />
             <button id="erase-button">
@@ -51,8 +60,9 @@
             </button>
           </form>
         </div>
+
         <div id="filter">
-          <h4>Filtrar</h4>
+          <label for="filter-select">Filtrar</label>
           <select id="filter-select">
             <option value="all">Todos</option>
             <option value="done">Feitos</option>
@@ -60,19 +70,17 @@
           </select>
         </div>
       </div>
+
       <form id="todo-form">
-        <p>Adicione sua tarefa</p>
+        <label for="todo-input">Adicione sua tarefa</label>
         <div class="form-control">
-          <input
-            type="text"
-            id="todo-input"
-            placeholder="O que você vai fazer?"
-          />
+          <input type="text" id="todo-input" placeholder="Digite sua tarefa" />
           <button type="submit">
             <i class="fa-thin fa-plus"></i>
           </button>
         </div>
       </form>
+
       <div id="todo-list"></div>
     </div>
 

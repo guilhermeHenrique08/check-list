@@ -21,7 +21,7 @@ function saveTodo(title) {
   const todo = document.createElement("div");
   todo.classList.add("todo");
 
-  const todoTitle = document.createElement("h3");
+  const todoTitle = document.createElement("h2");
   todoTitle.innerText = title;
 
   const doneBtn = document.createElement("button");
@@ -54,7 +54,7 @@ function updateInput(editInputValue) {
   const allElements = document.querySelectorAll(".todo");
 
   allElements.forEach((item) => {
-    const itemTitle = item.querySelector("h3");
+    const itemTitle = item.querySelector("h2");
 
     if (itemTitle.innerText === oldInputValue) {
       itemTitle.innerText = editInputValue;
@@ -84,7 +84,7 @@ function searchTodo() {
     });
   } else {
     allElements.forEach((item) => {
-      const itemTitle = item.querySelector("h3").innerText;
+      const itemTitle = item.querySelector("h2").innerText;
 
       if (!itemTitle.toLowerCase().includes(searchInputValue.toLowerCase())) {
         item.style.display = "none";
@@ -117,11 +117,11 @@ document.addEventListener("click", (e) => {
   const targetEl = e.target;
   // closest pega o elemento 'pai' mais proximo
   const parentEl = targetEl.closest("div");
-  const h3Parent = parentEl.querySelector("h3");
+  const h2Parent = parentEl.querySelector("h2");
   let todoTitle;
 
-  if (parentEl && h3Parent) {
-    todoTitle = h3Parent.innerText;
+  if (parentEl && h2Parent) {
+    todoTitle = h2Parent.innerText;
   }
 
   if (targetEl.classList.contains("finish-todo")) {
