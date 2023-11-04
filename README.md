@@ -13,11 +13,11 @@
 
 - Excluir Tarefas: Permite aos usuários remover tarefas concluídas ou não desejadas.
 
-- Editar Tarefas: Os usuários podem fazer alterações nas tarefas existentes, como nome, data de vencimento e descrição.
+- Editar Tarefas: Os usuários podem fazer alterações nas tarefas existentes
 
 - Pesquisar Tarefas: Uma função de pesquisa que ajuda os usuários a encontrar tarefas específicas com base em palavras-chave.
 
-- Filtrar Tarefas: Os usuários podem aplicar filtros para organizar as tarefas por status, prioridade, data de vencimento, etc.
+- Filtrar Tarefas: Os usuários podem aplicar filtros para organizar em tarefas feitas, não feitas ou todas as tarefas
 
 - Mudança de Tema: Permite personalizar a aparência da aplicação com diferentes temas ou esquemas de cores.
 
