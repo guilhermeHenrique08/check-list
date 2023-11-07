@@ -25,14 +25,17 @@ function saveTodo(title) {
   todoTitle.innerText = title;
 
   const doneBtn = document.createElement("button");
+  doneBtn.setAttribute('aria-label', 'Finish task')
   doneBtn.classList.add("finish-todo");
   doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
 
   const editBtn = document.createElement("button");
+  editBtn.setAttribute('aria-label', 'Edit task')
   editBtn.classList.add("edit-todo");
   editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
 
   const deleteBtn = document.createElement("button");
+  deleteBtn.setAttribute('aria-label', 'Delete task')
   deleteBtn.classList.add("delete-todo");
   deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 
