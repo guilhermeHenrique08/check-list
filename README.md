@@ -1,6 +1,6 @@
 ## Preview
 
-<img src="assets/project.png" alt="Imagem do projeto">
+<img src="assets/preview.png" alt="Imagem do projeto">
 <br />
 
 ## 💻Projeto
